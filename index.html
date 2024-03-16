@@ -1,62 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="portfoilo.css">
-  
+  <title>Aung Moe Wai - Web Developer</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
-  <!-- Navbar -->
-  <nav class="navbar1">
-    <div class="mainlogo">
-      <a href="#" class="logo">A</a>
-    </div>
-
-    <div class="menu">
-      <ul class="list">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">Project</a></li>
+  <header>
+    <h1>Aung Moe Wai</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
-    </div>
-  </nav>
+    </nav>
+  </header>
 
+  <main>
+    <section class="hero">
+      <img src="hero-image.jpg" alt="Web development hero image">
+      <h2>Web Developer</h2>
+      <p>Building creative and functional web experiences.</p>
+    </section>
 
-  <!-- Main Body -->
-  <div class="main_body">
-    <div class="content">
-      <h5>Hello</h5>
-      <h3>I'm Aung Moe Wai</h3>
-      <p>front end web developer</p>
-    </div>
-    <div>
-      <img src="pic1.jpeg" width="300px" height="300px">
-    </div>
-  </div>
+    <section class="about" id="about">
+      <h3>About Me</h3>
+      <img src="profile-picture.jpg" alt="Aung Moe Wai headshot">
+      <p>...</p> </section>
 
-  <div>
-    <h2 class="about_design">About Me</h2>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, dicta minus et maiores excepturi modi, aut magni
-      iusto ad asperiores unde fugiat voluptatibus ducimus perspiciatis non quod molestias ratione illo?
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente veritatis tempora ratione ipsum nemo sequi,
-      minima quae sunt labore dolore possimus quos dignissimos aut alias magni vitae explicabo fugit incidunt?
-    </p>
-  </div>
+    <section class="skills" id="skills">
+      <h3>Skills</h3>
+      <ul>
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>JavaScript</li>
+        </ul>
+      </section>
 
-  <div class="d-grid gap-2 d-md-block">
-    <button class="btn btn-primary" type="button">Button</button>
-    <button class="btn btn-primary" type="button">Button</button>
-  </div>
+    <section class="projects" id="projects">
+      <h3>Projects</h3>
+      <div class="project-item">
+        <h4>Project Title</h4>
+        <p>...</p> <a href="#">Live Demo</a> </div>
+      </section>
+
+    <section class="contact" id="contact">
+      <h3>Contact</h3>
+      <form action="#">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Aung Moe Wai</p>
+  </footer>
 
 </body>
-
 </html>
